@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Community Event Portal</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+<h1>Community Event Portal</h1>
+
+<div class="controls">
+    <input type="text" id="search" placeholder="Search events">
+
+    <select id="categoryFilter">
+        <option value="all">All</option>
+        <option value="music">Music</option>
+        <option value="food">Food</option>
+        <option value="tech">Tech</option>
+    </select>
+</div>
+
+<div id="eventContainer"></div>
+
+<h2>Register</h2>
+
+<form id="regForm">
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+
+    <select name="event">
+        <option value="music">Music Night</option>
+        <option value="food">Food Festival</option>
+        <option value="tech">Tech Talk</option>
+    </select>
+
+    <button type="submit" id="registerBtn">Register</button>
+</form>
+
+<p id="msg"></p>
+
+<script src="main.js"></script>
+
+</body>
+</html>
